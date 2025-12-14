@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+		<title>机器人俱乐部</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+		<h1 onclick="window.location.href='index.html'" 
+		    style="cursor: pointer;">
+		    机器人俱乐部
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="score.html">对抗赛计分</a></li>
+				<li><a href="lottery.html">抽奖池</a></li>
+				<li><a href="vs-rules.html"  style="color: red;">对抗赛规则</a></li>
+				<li><a href="task-rules.html">任务赛规则</a></li>
+				<li><a href="staff.html">人员安排</a></li>
+			</ul>
+		</nav>
+		</header>
+		<main>
+			<section class="main"></section>
+			    
+			    <!-- 对抗赛规则图片 -->
+			    <div class="rule-image" id="vs-rule-image">
+			        <img src="img/对抗.png" alt="对抗赛规则">
+			    </div>
+			
+		</main>
+		
+		<script>
+		document.addEventListener('contextmenu', function(e) {
+		  e.preventDefault();
+		});
+		
+		document.addEventListener('keydown', function(e) {
+		  if (
+		    e.key === 'F12' ||
+		    (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+		    (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+		    (e.ctrlKey && e.key === 'U') ||
+		    (e.keyCode === 123)
+		  ) {
+		    e.preventDefault();
+		  }
+		});
+		</script>
+		<footer>
+			<strong><p>Copyright  ©  2025  马宇诚 - 机器人俱乐部  版权所有 </p></strong>
+		</footer>
+		
+	</body>
+</html>
